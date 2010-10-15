@@ -13,5 +13,8 @@ handlers:
 - url: /css
   static_dir: css
 
+- url: /fluxware/.*
+  script: fluxware/index.py
+
 - url: /.*
   script: index.py
