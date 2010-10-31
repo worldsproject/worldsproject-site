@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+  <title>{{Title}} | Worlds Project Mobile</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <link href="css/mobile.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script type="text/javascript">
+    $(document).ready(function () 
+    {
+      $("ul.menu_body li:even").addClass("alt");
+    });
+  </script>
+  
+  <script type="text/javascript">
+    $(document).ready(function () 
+    {
+      $("ul.menu_body li:even").addClass("alt");
+
+      $('img.menu_head').click(function () 
+      {
+
+        $('ul.menu_body').slideToggle('medium');
+
+      });
+    });
+  </script>
+  
+  <div id="body">
+  <div id="body-left-panel">
+  <img src="img/box_up-left_edge_dark.png" width="184" height="32" class="menu_head" />
+  <ul class="menu_body">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+   
+      <div style="padding:10px;">
+        <!-- Box -->
+        <div class="box_upper_part">
+          <img src="img/box_up-left_edge.png" alt="" class="align-left">
+          <img src="img/box_up-right_edge.png" alt="" class="align-right">
+          <span class="box_header">{{heading}}</span>
+        </div>
+        <div class="box_middle_part">
+          <div class="pad_15tah">
+            {{content}}           
+          </div>
+ 
+        </div>
+        <div class="box_lower_part">
+          <img src="img/box_low-left_edge.png" alt="" class="align-left">
+          <img src="img/box_low-right_edge.png" alt="" class="align-right">
+        </div>
+        <!-- /Box -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>
