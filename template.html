@@ -2,8 +2,28 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>{{title}} | Worlds Project</title>
-<link rel="stylesheet" type="text/css" href="http://www.worldsproject.org/css/main.css">
-</head><body style="margin-left:1px;margin-right:1px;margin-bottom:0px;margin-top:0px;">
+<link rel="stylesheet" type="text/css" href="/css/main.css">
+<link rel="stylesheet" href="/css/jquery.twitter.css" type="text/css" media="all">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script> 
+		<script type="text/javascript" src="/javascript/jquery.twitter.js"></script> 
+ 
+		<script type="text/javascript"> 
+		<!--//--><![CDATA[//><!--
+			$(document).ready(function() {
+				$("#twitter").getTwitter({
+					userName: "worldsproject",
+					numTweets: 5,
+					loaderText: "Loading tweets...",
+					slideIn: false,
+					showHeading: false,
+					headingText: "",
+					showProfileLink: true
+				});
+			});
+		//--><!]]>
+		</script>
+</head>
+<body style="margin-left:1px;margin-right:1px;margin-bottom:0px;margin-top:0px;">
 <div id="container">
   <div id="header">
     <span id="main_header">Worlds Project</span>
@@ -48,13 +68,7 @@
           <span class="box_header">:: Current Happenings</span></div>
         <div class="box_middle_part">
           <div style="padding:10px;">
-          <ul class="img_green">
-            <li>{{current0}}</li>
-            <li>{{current1}}</li>
-            <li>{{current2}}</li>
-            <li>{{current3}}</li>
-            <li>{{current4}}</li>
-          </ul>
+             <div id="twitter"></div>
             <br /><a href="firehose.html">Want More?</a>
           </div>
         </div>
@@ -71,10 +85,10 @@
   <div id="footer">
     <div id="footer_nav_menu">
       <div class="footer_link_container">
-        <a href="index.html" class="main_nav">Home</a><span class="link_separator">::</span>
-        <a href="projects.html" class="main_nav">Projects</a><span class="link_separator">::</span>
-        <a href="about.html" class="main_nav">About Us</a><span class="link_separator">::</span>
-        <a href="contact.html" class="main_nav">Contact</a>
+        <a href="index.php" class="main_nav">Home</a><span class="link_separator">::</span>
+        <a href="project.php" class="main_nav">Projects</a><span class="link_separator">::</span>
+        <a href="about.php" class="main_nav">About Us</a><span class="link_separator">::</span>
+        <a href="contact.php" class="main_nav">Contact</a>
       </div>
     </div>
     <div id="footer_copyright">
