@@ -52,6 +52,7 @@ form
 div#header
 {
 	margin-top: 10px;
+	margin-bottom: -10px;
 }
 
 div#content h3
@@ -69,7 +70,7 @@ div#container
 
 div#content
 {
-	background: url('http://www.fluxware.worldsproject.org/images/bg.png');
+	background: url('http://www.worldsproject.org/fluxware/images/bg.png');
 	background-repeat: repeat-y;
 	float:left;
 	width:100%;
@@ -123,7 +124,7 @@ div#navigation li
 
 div#footer
 {
-	background-image: url('http://www.fluxware.worldsproject.org/images/footer.png');
+	background-image: url('http://www.worldsproject.org/fluxware/images/footer.png');
 	clear:both;
 	width:100%;
 	height: 66px;
