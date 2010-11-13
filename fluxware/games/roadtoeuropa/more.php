@@ -1,20 +1,26 @@
-<?
-	include("../../header.tpl");
-?>
+<?php
+require_once("../../../template.php"); 
 
-<h3>Never released "Road to Europa" art and music.</h3>
+$page = new Page("../../template.html"); 
+
+$page->replace_tags(array( 
+  "title" => 'The Road to Europa', 
+  "heading" => "The Fluxware organizations first game.", 
+  "content" => '<h3>Never released "Road to Europa" art and music.</h3>
 
 <p><b><u>Music</u></b></p>
 <p>
 	<div class="music">
 		<form>
 			<b>Bastard Cherry Babies</b> <br />
-			<object type="application/x-shockwave-flash" width="20" height="18"
-				data="./button/musicplayer.swf?playlist_url=./bcbPlaylist.xspf">
-				<param name="movie" 
-					value="./button/musicplayer.swf?playlist_url=./bcbPlaylist.xspf" />
-			</object>
-
+			<audio src="music/bastard_cherry_babies.mp3" controls="controls">
+				<object type="application/x-shockwave-flash" width="20" height="18"
+					data="./button/musicplayer.swf?playlist_url=./bcbPlaylist.xspf">
+					<param name="movie" 
+						value="./button/musicplayer.swf?playlist_url=./bcbPlaylist.xspf" />
+				</object>
+			</audio>
+			<br />
 			<a href="music/bastard_cherry_babies.mp3" id="bc">Download (4Mb)</a>
 		</form>
 		
@@ -22,11 +28,14 @@
 		 
 		<form>
 			<b>Some Kind of Song</b> <br />
-			<object type="application/x-shockwave-flash" width="20" height="20"
-				data="./button/musicplayer.swf?playlist_url=./skoaPlaylist.xspf">
-				<param name="movie" 
-					value="./button/musicplayer.swf?playlist_url=./skoaPlaylist.xspf" />
-			</object>
+			<audio src="music/bastard_cherry_babies.mp3" controls="controls">
+				<object type="application/x-shockwave-flash" width="20" height="20"
+					data="./button/musicplayer.swf?playlist_url=./skoaPlaylist.xspf">
+					<param name="movie" 
+						value="./button/musicplayer.swf?playlist_url=./skoaPlaylist.xspf" />
+				</object>
+			</audio>
+			<br />
 			<a href="music/some_kind_of_song.mp3" id="sk">Download (4.5Mb)</a>
 		</form>
 	</div>
@@ -156,7 +165,8 @@
 <a href="./images/extra/moon_level.png" rel="lightbox[concept]" title="Moon Level Layout.  By: Bill Maul">
 		<img src="./images/extra/thumbnails/moon_level.png" alt="Moon Level Layout" />
 </a>
-</p>
-<?
-	include("../../footer.tpl");
+</p>'
+)); 
+
+$page->output();
 ?>
