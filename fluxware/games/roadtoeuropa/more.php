@@ -28,7 +28,7 @@ $page->replace_tags(array(
 		 
 		<form>
 			<b>Some Kind of Song</b> <br />
-			<audio src="music/bastard_cherry_babies.mp3" controls="controls">
+			<audio src="music/some_kind_of_song.mp3" controls="controls">
 				<object type="application/x-shockwave-flash" width="20" height="20"
 					data="./button/musicplayer.swf?playlist_url=./skoaPlaylist.xspf">
 					<param name="movie" 
