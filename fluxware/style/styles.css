@@ -74,12 +74,12 @@ div#content
 	background-repeat: repeat-y;
 	float:left;
 	width:100%;
-	margin-left: 3px;
 }
 
 div#content p
 {
 	line-height:1.4;
+	padding-left: 3px;
 }
 
 div#content ul
