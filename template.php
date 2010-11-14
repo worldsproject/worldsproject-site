@@ -31,7 +31,7 @@ class Page
             foreach ($tags as $tag => $data) 
             { 
                 $data = (file_exists($data)) ? $this->parse($data) : $data; 
-                $this->page = eregi_replace("{{" . $tag . "}}", $data, 
+                $this->page = preg_replace("{{{" . $tag . "}}}", $data, 
                       $this->page); 
             }
 		} 
