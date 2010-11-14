@@ -21,24 +21,20 @@ a
 	text-decoration: underline;
 }
 
-.music form
+div#music
 {
-	margin-left:90px;
-	margin-right:60px;
+    width: 100%;
+	margin-left:auto;
+	margin-right:auto;
 	text-align: center;
 }
 
-.music img
+div#music p
 {
-	vertical-align: middle;
+	text-align: center;
 }
 
-.music input
-{
-	vertical-align: middle;
-}
-
-.music a
+div#music a
 {
 	margin-top: -5px;
 }
