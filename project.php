@@ -4,6 +4,7 @@ require_once("template.php");
 $page = new Page("template.html"); 
 
 $page->replace_tags(array( 
+  "description" => "Projects that WorldsProject is currently involved in.",
   "title" => "Our Projects", 
   "heading" => "Current (and some past) Projects", 
   "content" => '<ul class="img_green">
